@@ -61,4 +61,15 @@ test("Should be under 1600", () => {
   const load2 = 700;
   expect(load1 + load2).toBeLessThan(1600);
 });
+
+// *************************************************************** //
+
+// REGEX
+test("There is no I in team", () => {
+  expect("teami").not.toMatch(/I/);
+});
+test("There is no I in team", () => {
+  expect("team").not.toMatch(/I/i);
+});
+
 // *************************************************************** //
