@@ -1,0 +1,23 @@
+{
+  "name": "jest-basics",
+  "version": "1.0.0",
+  "description": "Hands on learning Unit Testing in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubhavc9/jest-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anubhavc9/jest-basics/issues"
+  },
+  "homepage": "https://github.com/anubhavc9/jest-basics#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
