@@ -8,6 +8,8 @@ test("Adds 2 + 2 to NOT equal 5", () => {
   expect(functions.add(2, 2)).not.toBe(5);
 });
 
+// *************************************************************** //
+
 // CHECK FOR TRUTHY & FALSY VALUES
 // toBeNull matches only null
 // toBeUndefined matches only undefined
@@ -31,3 +33,24 @@ test("Should be falsy", () => {
 // test("Should be falsy", () => {
 //   expect(functions.checkValue(1)).toBeFalsy();
 // });
+
+// *************************************************************** //
+
+// test("User should be Anubhav Kandiyal object", () => {
+//   expect(functions.createUser()).toBe({
+//     firstName: "Anubhav",
+//     lastName: "Kandiyal",
+//   });
+// });
+
+// toBe() is used for primitive types like numbers, strings
+// For reference types like arrays, objects, you need to use toEqual()
+
+test("User should be Anubhav Kandiyal object", () => {
+  expect(functions.createUser()).toEqual({
+    firstName: "Anubhav",
+    lastName: "Kandiyal",
+  });
+});
+
+// *************************************************************** //
