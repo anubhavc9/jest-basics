@@ -17,6 +17,25 @@ const functions = require("./functions");
 // };
 
 // *************************************************************** //
+// RUNNING SOME CODE BEFORE A PARTICULAR TEST CASE
+
+const nameCheck = () => console.log("checking names...");
+describe("Checking Names", () => {
+  beforeEach(() => nameCheck());
+
+  // nameCheck() will run only before the following 2 tests
+  test("User is Jeff", () => {
+    const user = "Jeff";
+    expect(user).toBe("Jeff");
+  });
+
+  test("User is Karen", () => {
+    const user = "Karen";
+    expect(user).toBe("Karen");
+  });
+});
+
+// *************************************************************** //
 
 test("Adds 2 + 2 to equal 4", () => {
   expect(functions.add(2, 2)).toBe(4);
