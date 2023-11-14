@@ -55,7 +55,7 @@ test("User should be Anubhav Kandiyal object", () => {
 
 // *************************************************************** //
 
-// OTHER AVAILABLE MATCHERS: toBeLessThan, toBeLessThanOrEqual
+// OTHER AVAILABLE MATCHERS: toBeLessThan, toBeLessThanOrEqual, toMatch, toContain
 test("Should be under 1600", () => {
   const load1 = 800;
   const load2 = 700;
@@ -70,6 +70,14 @@ test("There is no I in team", () => {
 });
 test("There is no I in team", () => {
   expect("team").not.toMatch(/I/i);
+});
+
+// *************************************************************** //
+
+// ARRAYS
+test("Admin should be in usernames", () => {
+  usernames = ["john", "karen", "admin"];
+  expect(usernames).toContain("admin");
 });
 
 // *************************************************************** //
