@@ -1,17 +1,22 @@
 const functions = require("./functions");
 
+// *************************************************************** //
+// RUNNING SOME CODE BEFORE/AFTER ALL/EACH TEST CASES
+
 // beforeEach(() => initDatabase());
 // afterEach(() => closeDatabase());
 
-beforeAll(() => initDatabase());
-afterAll(() => closeDatabase());
+// beforeAll(() => initDatabase());
+// afterAll(() => closeDatabase());
 
-const initDatabase = () => {
-  console.log("Database initialized...");
-};
-const closeDatabase = () => {
-  console.log("Database connection closed");
-};
+// const initDatabase = () => {
+//   console.log("Database initialized...");
+// };
+// const closeDatabase = () => {
+//   console.log("Database connection closed");
+// };
+
+// *************************************************************** //
 
 test("Adds 2 + 2 to equal 4", () => {
   expect(functions.add(2, 2)).toBe(4);
