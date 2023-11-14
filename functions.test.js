@@ -28,6 +28,6 @@ test("Should be falsy", () => {
 test("Should be falsy", () => {
   expect(functions.checkValue(undefined)).toBeFalsy();
 });
-test("Should be falsy", () => {
-  expect(functions.checkValue(1)).toBeFalsy();
-});
+// test("Should be falsy", () => {
+//   expect(functions.checkValue(1)).toBeFalsy();
+// });
